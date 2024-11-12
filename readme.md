@@ -16,7 +16,7 @@
 
 ## Instalacion
 ---
-Para poder iniciar este projecto, sigue estos pasos:
+Para poder iniciar este proyecto, sigue estos pasos:
 
 ``` 1. Clona el repositorio ```
  >  - _git clone https://github.com/Benicio-Baldassare-Dev/Icommerce-Backend 
