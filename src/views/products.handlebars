@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lista de Productos</title>
+</head>
+<body>
+  <h1>Productos Disponibles</h1>
+  {{#if products.length}}
+    <div class="product-list">
+      {{#each products}}
+        <div class="product">
+          <h3 class="product-name">{{this.name}}</h3>
+          <p class="product-description">{{this.description}}</p>
+          <p class="product-stock">Stock: {{this.stock}}</p>
+          <p class="product-price">Precio: ${{this.price}}</p>
+        </div>
+      {{/each}}
+    </div>
+  {{else}}
+    <p class="no-products">No hay productos disponibles.</p>
+  {{/if}}
+
+  <button><a href="/">Volver</a></button>
+</body>
+</html>

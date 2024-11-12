@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiempo Real</title>
+</head>
+<body>
+<form id="productForm">
+    <input type="number" name="id" placeholder="ID del producto" required />
+    <input type="text" name="name" placeholder="Nombre del producto" required />
+    <input type="number" name="price" placeholder="Precio" required />
+    <input type="number" name="stock" placeholder="Stock" required />
+    <button type="submit" value="guardar">Agregar Producto</button>
+</form>
+
+<div id="productList"></div> <!-- Donde se mostrarán los productos -->
+
+<button><a href="/">Volver</a></button>
+
+</body>
+
+<script type="module" src="/index.js"></script>
+
+</html>

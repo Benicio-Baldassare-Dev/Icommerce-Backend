@@ -1,0 +1,24 @@
+[
+    {
+      "id": 1,
+      "name": "Fideos",
+      "description": "",
+      "price": 5000,
+      "stock": 20
+    },
+    {
+      "id": 2,
+      "name": "Manteca",
+      "description": "",
+      "price": 7500,
+      "stock": 20
+    },
+    {
+      "id": 3,
+      "name": "Queso",
+      "description": "",
+      "price": 5400,
+      "stock": 20
+    }
+  ]
+  
