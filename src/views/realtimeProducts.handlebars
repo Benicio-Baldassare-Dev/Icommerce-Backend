@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tiempo Real</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Realtime Products</title>
 </head>
 <body>
-<form id="productForm">
-    <input type="number" name="id" placeholder="ID del producto" required />
-    <input type="text" name="name" placeholder="Nombre del producto" required />
-    <input type="number" name="price" placeholder="Precio" required />
-    <input type="number" name="stock" placeholder="Stock" required />
-    <button type="submit" value="guardar">Agregar Producto</button>
-</form>
 
-<div id="productList"></div> <!-- Donde se mostrarán los productos -->
+  <h2>Agregar Producto</h2>
 
-<button><a href="/">Volver</a></button>
+  <form id="productForm">
+    <input type="text" id="inputName" placeholder="Nombre del producto" required>
+    <input type="text" id="inputDescription" placeholder="Descripción" required>
+    <input type="number" id="inputStock" placeholder="Stock" required>
+    <input type="number" id="inputPrice" placeholder="Precio" required>
+    <button id="btn" type="submit">Agregar Producto</button>
+  </form>
 
+
+  <h1>Lista de Productos</h1>
+  <div id="productList"></div>
+
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/index.js"></script>
 </body>
-
-<script type="module" src="/index.js"></script>
-
 </html>

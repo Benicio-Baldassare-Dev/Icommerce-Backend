@@ -52,4 +52,4 @@ Lo utilizamos en este proyecto para renderizar:
 ## Licencia
 ---
 
-```Este proyecto está licenciado bajo la licencia de su programador. Avisame si     necesitas mas ajustes.```
+```Este proyecto está licenciado bajo la licencia de su programador. Avisame si necesitas mas ajustes.```

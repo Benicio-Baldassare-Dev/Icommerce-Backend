@@ -1,24 +1,23 @@
 [
-    {
-      "id": 1,
-      "name": "Fideos",
-      "description": "",
-      "price": 5000,
-      "stock": 20
-    },
-    {
-      "id": 2,
-      "name": "Manteca",
-      "description": "",
-      "price": 7500,
-      "stock": 20
-    },
-    {
-      "id": 3,
-      "name": "Queso",
-      "description": "",
-      "price": 5400,
-      "stock": 20
-    }
-  ]
-  
+  {
+    "id": 1732131626936,
+    "name": "Manzana",
+    "description": "Manzana roja dulce",
+    "stock": 20,
+    "price": 2500
+  },
+  {
+    "id": 1732131656733,
+    "name": "Pera",
+    "description": "Fruta de color amarillo, dulce",
+    "stock": 20,
+    "price": 3500
+  },
+  {
+    "id": 1732131700247,
+    "name": "Fideos",
+    "description": "Fideos hechos a base de harina",
+    "stock": 20,
+    "price": 5000
+  }
+]
