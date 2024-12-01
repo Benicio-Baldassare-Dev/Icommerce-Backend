@@ -7,6 +7,27 @@
 </head>
 <body>
 
+  <style>
+    *{padding: 0; margin: 0; box-sizing: border-box;}
+    header{ padding: 35px; background-color: lightgray; width: 100%; display: flex; justify-content: space-between; text-align: center;}
+    .nav ul{list-style: none; display: flex; gap: 50px;}
+    .nav ul li a{text-decoration: none; font-size: 18px; color: gray;}
+    .nav ul li a:hover{border: 1px solid white; border-radius: 5px; padding: 10px; background-color: white; backdrop-filter: blur(4px);}
+    h2 a {font-size: 26px; text-decoration: none; color: gray;}
+    button{padding: 20px; border-radius: 16px; border: none; background-color: lightgray; margin: 10px; cursor: pointer;}
+  </style>
+
+    <header>
+    <h2><a href="/">Mi Tienda</a></h2>
+    <div class="nav">
+      <ul>
+        <li><a href="/products">Productos</a></li>
+        <li><a href="#">Agregar Productos</a></li>
+        <li><a href="/carrito">Carrito</a></li>
+      </ul>
+    </div>
+  </header>
+
   <h2>Agregar Producto</h2>
 
   <form id="productForm">
@@ -21,6 +42,7 @@
   <h1>Lista de Productos</h1>
   <div id="productList"></div>
 
+  <button><a href="/">Volver</a></button>
 
   <script src="/socket.io/socket.io.js"></script>
   <script src="/index.js"></script>

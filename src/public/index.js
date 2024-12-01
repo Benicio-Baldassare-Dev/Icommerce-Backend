@@ -1,11 +1,10 @@
 const socketClient = io(); // Conectar con el servidor WebSocket
-
-const formulario = document.getElementById("productForm");
 const inputName = document.getElementById("inputName");
 const inputDescription = document.getElementById("inputDescription");
 const inputStock = document.getElementById("inputStock");
 const inputPrice = document.getElementById("inputPrice");
 const productList = document.getElementById("productList");
+const btn = document.getElementById('btn');
 
 // Escuchar la lista actualizada de productos desde el servidor
 socketClient.on("arrayProducts", (products) => {
@@ -66,3 +65,4 @@ btn.addEventListener('click', async (event) => {
   inputStock.value = "";
   inputPrice.value = "";
 });
+

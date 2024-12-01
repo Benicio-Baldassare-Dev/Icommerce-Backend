@@ -1,6 +1,6 @@
 // src/routes/home.router.js
 import { Router } from "express";
-import ProductManager from "../managers/product_manager.js";
+import ProductManager from "../controllers/product_controller.js";
 import path from "path";
 
 const router = Router();

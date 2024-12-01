@@ -6,15 +6,42 @@
   <title>Lista de Productos</title>
 </head>
 <body>
+  <style>
+    *{padding: 0; margin: 0; box-sizing: border-box;}
+    header{ padding: 35px; background-color: lightgray; width: 100%; display: flex; justify-content: space-between; text-align: center;}
+    .nav ul{list-style: none; display: flex; gap: 50px;}
+    .nav ul li a{text-decoration: none; font-size: 18px; color: gray;}
+    .nav ul li a:hover{border: 1px solid white; border-radius: 5px; padding: 10px; background-color: white; backdrop-filter: blur(4px);}
+    h2 a {font-size: 26px; text-decoration: none; color: gray;}
+    h1{width: 100%; text-align: center; font-size: 43px;}
+    .product-list{ display: grid; grid-template-columns: repeat(3, 1fr); row-gap: 30px;}
+    .card-product{  background: rgb(83,83,83); background: linear-gradient(90deg, rgba(83,83,83,1) 0%, rgba(142,136,136,1) 100%); box-shadow: 2px 5px 15px rgba(0, 0 ,0, 0.70);  border: 2px solid gray; border-radius: 16px; width: 90%; height: 100%; text-align: center; margin: 10px; color: lightgray;}
+    button{padding: 20px; border-radius: 16px; border: none; background-color: lightgray; margin: 10px; cursor: pointer;}
+    button:hover{transform: scale(1.05);}
+    .btn-back{margin: 20px; text-align: center;}
+  </style>
+
+  <header>
+    <h2><a href="/">Mi Tienda</a></h2>
+    <div class="nav">
+      <ul>
+        <li><a href="#">Productos</a></li>
+        <li><a href="/realtimeProducts">Agregar Productos</a></li>
+        <li><a href="/carrito">Carrito</a></li>
+      </ul>
+    </div>
+  </header>
+
   <h1>Productos Disponibles</h1>
   {{#if products.length}}
     <div class="product-list">
       {{#each products}}
-        <div class="product">
+         <div class="card-product">
           <h3 class="product-name">{{this.name}}</h3>
           <p class="product-description">{{this.description}}</p>
           <p class="product-stock">Stock: {{this.stock}}</p>
           <p class="product-price">Precio: ${{this.price}}</p>
+          <button onclick="addToCart(${product.id})" class="btn-addCart">Agregar al Carrito</button>
         </div>
       {{/each}}
     </div>
@@ -22,6 +49,11 @@
     <p class="no-products">No hay productos disponibles.</p>
   {{/if}}
 
-  <button><a href="/">Volver</a></button>
+  <div class="btn-back">
+      <button class="back"><a href="/">Volver</a></button>
+  </div>
+
+  <script type="module" src="../js/cart.js"></script>
+
 </body>
 </html>

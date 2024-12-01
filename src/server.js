@@ -6,6 +6,7 @@ import { Server } from "socket.io";
 import productsRouter from "./routes/products.router.js";
 import mainRouter from "./routes/main.router.js";
 import getProductsRouter from "./routes/getproducts.router.js";
+import carrito from './routes/cart.router.js'
 import { fileURLToPath } from "url";
 import { dirname } from "path";
 
@@ -27,6 +28,7 @@ app.set("views", path.join(process.cwd(), "src/views"));
 app.use("/", mainRouter);
 app.use("/products", productsRouter);
 app.use("/realtimeProducts", getProductsRouter);
+app.use("/carrito", carrito)
 
 const httpServer = app.listen(8080, () => {
   console.log(`Server is running on port 8080`);
@@ -34,7 +36,7 @@ const httpServer = app.listen(8080, () => {
 
 const socketServer = new Server(httpServer);
 
-let arrayProducts = [];
+ export let arrayProducts = [];
 
 // --- Función para leer productos del archivo JSON ---
 async function readProducts() {

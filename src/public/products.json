@@ -19,5 +19,26 @@
     "description": "Fideos hechos a base de harina",
     "stock": 20,
     "price": 5000
+  },
+  {
+    "id": 1733082457899,
+    "name": "Azucar",
+    "description": "Consumible para endulzar alimentos o/y bebidas",
+    "stock": 20,
+    "price": 2000
+  },
+  {
+    "id": 1733082562436,
+    "name": "Sal",
+    "description": "Consumible para dar sabor a tus comidas",
+    "stock": 20,
+    "price": 4200
+  },
+  {
+    "id": 1733084944372,
+    "name": "Tomate",
+    "description": "Fruta para hacer ensalada o tuco",
+    "stock": 20,
+    "price": 3000
   }
 ]

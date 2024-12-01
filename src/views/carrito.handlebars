@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda</title>
+    <title>Document</title>
 </head>
 <body>
     <style>
@@ -13,12 +13,9 @@
     .nav ul li a{text-decoration: none; font-size: 18px; color: gray;}
     .nav ul li a:hover{border: 1px solid white; border-radius: 5px; padding: 10px; background-color: white; backdrop-filter: blur(4px);}
     h2 a {font-size: 26px; text-decoration: none; color: gray;}
-       h1{font-size: 56px; display: flex; justify-content: center;}
-       button{padding: 20px; border-radius: 16px; border: none; background: rgb(83,83,83); background: linear-gradient(90deg, rgba(83,83,83,1) 0%, rgba(142,136,136,1) 100%); margin: 10px;}
-       button:hover{transform: scale(1.05);}
-       button a{ text-decoration: none; color: white; padding: 20px 15px;}
-       .botones{text-align: center;}
+        button{padding: 20px; border-radius: 16px; border: none; background-color: lightgray; margin: 10px; cursor: pointer;}
     </style>
+
 
       <header>
     <h2><a href="/">Mi Tienda</a></h2>
@@ -26,17 +23,18 @@
       <ul>
         <li><a href="/products">Productos</a></li>
         <li><a href="/realtimeProducts">Agregar Productos</a></li>
-        <li><a href="/carrito">Carrito</a></li>
+        <li><a href="#">Carrito</a></li>
       </ul>
     </div>
   </header>
 
-     <h1>Bienvendios a Mi tienda</h1>
-     <div class="botones">
-        <button><a href="/products">Ver Productos</a></button>
-        <button><a href="/realtimeProducts">Ingresar Productos</a></button>
-        <button><a href="/carrito">Carrito</a></button>
-     </div>
+    <h1>Productos en Carrito</h1>
 
+   <h2>Carrito de compras</h2>
+   <div id="cart"></div>
+
+  <button><a href="/">Volver</a></button>
+
+  <script src="/src/js/cart.js"></script>
 </body>
 </html>
