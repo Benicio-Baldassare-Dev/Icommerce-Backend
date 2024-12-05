@@ -1,5 +1,5 @@
 import { ModelProduct } from "./mongoose.model.js";
-import { initMongoDB }  from "./mong.connect.js";
+import { initMongoDB }  from "../mong.connect.js";
 
 const mongoTest = async () =>{
     try {
